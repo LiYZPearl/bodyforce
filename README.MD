@@ -4,18 +4,18 @@ Yuzhu (Pearl) Li
 
 - Open a terminal 
 
-- load OpenFOAM v1912 (for example when using DTU cluster) and create user directory by 
+- Load OpenFOAM v1912 (for example when using DTU cluster) and create user directory by 
 
       module load OpenFoam/v1912/gcc-9.2.0-openmpi-3.1.5
       cd $WM_PROJECT_USER_DIR
       mkdir -p applications/solvers
       mkdir applications/utilities
 
-- copy bodyForce folder to applications/utilities
+- Copy bodyForce folder to applications/utilities
   
-- copy myPimpleFoam folder to applications/solvers
+- Copy myPimpleFoam folder to applications/solvers
 
-- compile bodyForce library by:
+- Compile bodyForce library by:
 
       cd $WM_PROJECT_USER_DIR/applications/utilities/bodyForce
       wclean
