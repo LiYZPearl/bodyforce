@@ -1,5 +1,5 @@
 How to compile the bodyForce for myPimpleFoam solver
-Yuzhu (Pearl) Li
+- Yuzhu (Pearl) Li
 
 - Open a terminal 
 
