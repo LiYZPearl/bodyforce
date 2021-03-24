@@ -1,0 +1,7 @@
+bodyForcing.C
+
+zero/zeroBodyForce.C
+sinusoidal/sinusoidalBodyForce.C
+multiCmpt/multiCmptBodyForce.C
+
+LIB = $(FOAM_USER_LIBBIN)/libbodyForce
