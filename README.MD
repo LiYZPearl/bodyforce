@@ -27,3 +27,17 @@ How to compile the bodyForce for myPimpleFoam solver / Yuzhu (Pearl) Li
       wmake 
 
 - Now you can use myPimpleFoam with specifying bodyForce in a case
+
+
+Here is a potential error could be encountered in OpenFOAM newer version:
+
+Error: 
+correctPhi.H:2:1: error: expected constructor, destructor, or type conversion before ‘(’ token
+(
+^
+ 
+Solution:
+Modify the main file(myPimpleFoam.C) by changing the
+#include "CorrectPhi.H" line 
+with:
+#include "path/where/CorrectPhi/is/located", (e.g. in my case /usr/lib/openfoam/openfoam2006/src/finiteVolume/lnInclude/CorrectPhi.H)
